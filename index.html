@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home-pi</title>
+    <link rel="shortcut icon" href="http://www.google.com/s2/favicons?domain=macchinetta.xyz">
+
+    <!--font-awsome-->
+    <!--Lato-->
+    <!--<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700">-->
+    <link rel="stylesheet" href="http://fonts.googleapis.com/earlyaccess/notosansjp.css">
+
+    <!--googleのアイコン-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--cssファイル読み込み-->
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+    <!--<div id="loading_start" style="height:100%;background-color:#e3f4fd;text-align:center;">-->
+    <div id="loading_start" class="load">
+        <div class="air">
+            <img src="https://www.gstatic.com/mobilesdk/160503_mobilesdk/logo/2x/firebase_28dp.png" width="50" height="50" class="d-inline-block align-top" alt="">
+            <p>Loading...</p>
+        </div>
+    </div>
+    <!--コンテンツ表示画面-->
+    <div id="loading_end" style="display:none;">
+        <!--nav-->
+        <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+          <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <a class="navbar-brand" href="#">
+              <img src="https://www.gstatic.com/mobilesdk/160503_mobilesdk/logo/2x/firebase_28dp.png" width="30" height="30" class="d-inline-block align-top" alt="">
+              Home-pi
+          </a>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <!--  <ul class="navbar-nav mr-auto">-->
+          <!--      <li class="nav-item mr-2">-->
+          <!--              <input class="form-control mr-sm-2" type="text" id="search-text" placeholder="Search">-->
+          <!--      </li>-->
+          <!--      <li class="nav-item mr-3 d-flex">-->
+          <!--          <label for="radio_title" class="h-100 mr-2 my-2 my-lg-0 d-flex align-items-center">-->
+          <!--              <input type="radio" id="radio_title" class="mr-1" name="search" value="title" checked>-->
+          <!--              タイトルで検索-->
+          <!--          </label>-->
+          <!--          <label for="radio_comment" class="h-100 mr-2 my-2 my-lg-0 d-flex align-items-center">-->
+          <!--              <input type="radio" id="radio_comment" class="mr-1" name="search" value="comment">-->
+          <!--              コメントで検索-->
+          <!--          </label>-->
+          <!--      </li>-->
+          <!--  </ul>-->
+            <a class="navbar-brand my-2 my-lg-0" id="userIcon" href="#">
+                <img src="https://www.gstatic.com/mobilesdk/160503_mobilesdk/logo/2x/firebase_28dp.png" width="30" height="30" class="d-inline-block align-top" alt="">
+            </a>
+          </div>
+        </nav>
+
+        <div class=" flex flex-just">
+          <div id="output" class="main container-fluid mt-3"></div>
+        </div>
+    </div>
+    <!--以下jquery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!--以下firebase-->
+    <script src="https://www.gstatic.com/firebasejs/4.6.0/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.2.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.2.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.2.0/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.2.0/firebase-messaging.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.2.0/firebase-storage.js"></script> 
+    <!--ここまでfirebase-->
+    <!--以下bootstrap-->
+    <!--<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <!--ここまでbootstrap-->
+    <!--以下自作jsファイル-->
+    <script type="text/javascript" src="js/script.js"></script>
+
+</body>
+
+</html>
