@@ -41,15 +41,9 @@ $(function () {
                 // ↓データ取得
                 var v = child.val();
                 // 小数点の処理
-                var temp = v.temperature * 100;
-                temp = Math.floor(temp);
-                temp = temp / 100;
-                var humid = v.humidity * 100;
-                humid = Math.floor(humid);
-                humid = humid / 100;
-                var press = v.pressure * 100;
-                press = Math.floor(press);
-                press = press / 100;
+                var temp = v.temperature.toFixed(2);
+                var humid = v.humidity.toFixed(2);
+                var press = v.pressure.toFixed(2);
 
                 // メッセージ表示
                 str = str +
