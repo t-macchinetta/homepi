@@ -1,12 +1,12 @@
 $(function () {
     // Initialize Firebase
     var config = {
-        apiKey: "AIzaSyDQQO_Pn--2IDt6Fk1WEo9CgYwx2UKOrBo",
-        authDomain: "home-pi-a4fa2.firebaseapp.com",
-        databaseURL: "https://home-pi-a4fa2.firebaseio.com",
-        projectId: "home-pi-a4fa2",
-        storageBucket: "home-pi-a4fa2.appspot.com",
-        messagingSenderId: "280584752918"
+        apiKey: "AIzaSyBP28sLV665ao1S4gBkKpcf5FMU4w3fvBk",
+        authDomain: "home-pi-75454.firebaseapp.com",
+        databaseURL: "https://home-pi-75454.firebaseio.com",
+        projectId: "home-pi-75454",
+        storageBucket: "",
+        messagingSenderId: "894370454949"
     };
     firebase.initializeApp(config);
 
